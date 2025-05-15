@@ -1,21 +1,19 @@
-'use client';
+"use client";
 
-import Navbar from '../../components/landing/Navbar';
-import HeroSection from '../../components/landing/HeroSection';
-import FeaturesSection from '../../components/landing/FeaturesSection';
-import PricingSection from '../../components/landing/PricingSection';
-import TestimonialsSection from '../../components/landing/TestimonialsSection';
-import Footer from '../../components/landing/Footer';
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import Features from '../components/Features';
+import Pricing from '../components/Pricing';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <main className="min-h-screen bg-white dark:bg-gray-900">
       <Navbar />
-      <HeroSection />
-      <FeaturesSection />
-      <PricingSection />
-      <TestimonialsSection />
+      <Hero />
+      <Features />
+      <Pricing />
       <Footer />
-    </div>
+    </main>
   );
 }
