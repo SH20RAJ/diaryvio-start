@@ -100,7 +100,7 @@ export default function Hero({ onVideoOpen }) {
             <div className="relative bg-white dark:bg-gray-900 rounded-[3rem] p-8 shadow-2xl border border-indigo-100 dark:border-indigo-900/50">
               <div className="aspect-square relative">
                 <Image
-                  src="/hero.png"
+                  src="/hero.png" // Replace with your image path
                   alt="Voice diary illustration"
                   fill
                   className="object-contain"
