@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Elements -->
+  <circle cx="400" cy="400" r="350" fill="url(#gradient)" opacity="0.1"/>
+  
+  <!-- Shield Base -->
+  <path d="M400 150C400 150 200 250 200 350V450C200 550 300 650 400 650C500 650 600 550 600 450V350C600 250 400 150 400 150Z" fill="url(#shieldGradient)"/>
+  
+  <!-- Shield Border -->
+  <path d="M400 150C400 150 200 250 200 350V450C200 550 300 650 400 650C500 650 600 550 600 450V350C600 250 400 150 400 150Z" stroke="#4F46E5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Lock Body -->
+  <rect x="350" y="350" width="100" height="120" rx="10" fill="#4F46E5"/>
+  
+  <!-- Lock Top -->
+  <path d="M400 300V350" stroke="#4F46E5" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="400" cy="300" r="20" fill="#4F46E5"/>
+  
+  <!-- Keyhole -->
+  <circle cx="400" cy="410" r="15" fill="white"/>
+  <rect x="390" y="410" width="20" height="30" fill="white"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="200" cy="200" r="10" fill="#4F46E5" opacity="0.5"/>
+  <circle cx="600" cy="200" r="10" fill="#4F46E5" opacity="0.5"/>
+  <circle cx="200" cy="600" r="10" fill="#4F46E5" opacity="0.5"/>
+  <circle cx="600" cy="600" r="10" fill="#4F46E5" opacity="0.5"/>
+  
+  <!-- Connection Lines -->
+  <path d="M200 200L400 300" stroke="#4F46E5" stroke-width="2" opacity="0.3"/>
+  <path d="M600 200L400 300" stroke="#4F46E5" stroke-width="2" opacity="0.3"/>
+  <path d="M200 600L400 500" stroke="#4F46E5" stroke-width="2" opacity="0.3"/>
+  <path d="M600 600L400 500" stroke="#4F46E5" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="800" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="shieldGradient" x1="400" y1="150" x2="400" y2="650" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+</svg> 
