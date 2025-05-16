@@ -1,6 +1,6 @@
 # DiaryVio 🎤📖
 
-**Tagline: _"Your voice, your story, your AI companion."_**
+__Tagline: _"Your voice, your story, your AI companion."___
 
 ## 🌟 Vision
 
@@ -13,6 +13,18 @@ DiaryVio is built on three core principles:
 1. **"Your voice is your journal"** - Speaking is more natural than typing, allowing for more authentic expression
 2. **"Your memories should be searchable"** - Past experiences should be easily accessible through natural language
 3. **"Your AI companion knows and supports you"** - A personalized AI friend who adapts to your personality and needs
+
+## 🚀 Key Features
+
+### Free Features
+- **Voice-to-Text**: Speak naturally and watch your thoughts transform into beautifully formatted entries.
+- **Text Journaling**: Write your thoughts directly with our beautiful editor. Perfect for detailed reflections.
+- **Smart Search**: Find any memory instantly with AI-powered search that understands context.
+- **AI Companion**: Get insights and reflections from an AI that truly understands your journey.
+
+### Premium Features
+- **Photo Memories**: Upload and organize your photos with AI-powered captions and tags.
+- **Video Journals**: Record video entries and store them securely with automatic transcription.
 
 ## ✨ Feature Roadmap
 
@@ -122,7 +134,6 @@ npm run dev
 ## 🛣️ Development Roadmap
 
 ### Phase 1: Foundation (1-2 months)
-
 - Voice-to-text diary interface
 - Basic memory search functionality
 - Simple AI companion responses
@@ -131,7 +142,6 @@ npm run dev
 - Mobile-responsive design
 
 ### Phase 2: AI Companion (2-3 months)
-
 - Enhanced AI personality customization
 - Voice chat capabilities
 - Emotional intelligence improvements
@@ -139,7 +149,6 @@ npm run dev
 - Advanced memory search with context
 
 ### Phase 3: Advanced Features (3-4 months)
-
 - Sharing and community features
 - Family and group journaling
 - Advanced analytics and insights
@@ -149,7 +158,6 @@ npm run dev
 ## 🔒 Privacy and Security
 
 DiaryVio is built with privacy at its core:
-
 - End-to-end encryption for all diary entries and conversations
 - Local-first architecture where possible for sensitive data
 - Transparent data usage policies with clear AI training boundaries
@@ -159,7 +167,7 @@ DiaryVio is built with privacy at its core:
 
 ## 🤝 Contributing
 
-We welcome contributions to ReflectAI! See our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+We welcome contributions to DiaryVio! See our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## 📝 License
 
