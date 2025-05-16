@@ -1,5 +1,5 @@
 {
-	"name": "aithumb",
+	"name": "diaryvio",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
@@ -9,13 +9,20 @@
 		"lint": "next lint",
 		"deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
 		"preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-		"cf-typegen": "wrangler types --env-interface CloudflareBindings ./cloudflare-env.d.ts"
+		"cf-typegen": "wrangler types --env-interface CloudflareBindings ./cloudflare-env.d.ts",
+		"db:generate": "drizzle-kit generate",
+		"db:push": "wrangler d1 execute diaryvio --file=./drizzle/meta/_journal.json"
 	},
 	"dependencies": {
+		"@cloudflare/workers-types": "^4.20250515.0",
 		"@headlessui/react": "^2.2.3",
 		"@heroicons/react": "^2.2.0",
 		"@opennextjs/cloudflare": "^1.0.2",
+		"better-auth": "^1.2.7",
+		"drizzle-kit": "^0.31.1",
+		"drizzle-orm": "^0.43.1",
 		"framer-motion": "^12.11.4",
+		"nanoid": "^5.1.5",
 		"next": "15.3.2",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
@@ -25,6 +32,8 @@
 	"devDependencies": {
 		"@eslint/eslintrc": "^3",
 		"@tailwindcss/postcss": "^4",
+		"@types/node": "22.15.18",
+		"@types/react": "19.1.4",
 		"eslint": "^9",
 		"eslint-config-next": "15.3.2",
 		"tailwindcss": "^4",

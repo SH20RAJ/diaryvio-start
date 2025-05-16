@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import DiaryEntry from '../../components/DiaryEntry';
+import DiaryEntry from '../../../components/DiaryEntry';
 import Link from 'next/link';
 import { Switch } from '@headlessui/react';
 

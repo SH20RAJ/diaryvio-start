@@ -21,7 +21,7 @@ const staggerContainer = {
 
 export default function Hero({ onVideoOpen }) {
   return (
-    <motion.section 
+    <motion.section
       initial="hidden"
       animate="visible"
       variants={staggerContainer}
@@ -30,15 +30,15 @@ export default function Hero({ onVideoOpen }) {
       <div className="container mx-auto max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <motion.div variants={fadeIn} className="space-y-10">
-            <motion.div 
+            <motion.div
               variants={fadeIn}
               className="inline-flex items-center px-4 py-2 bg-indigo-100 dark:bg-indigo-900/30 rounded-full"
             >
               <SparklesIcon className="w-5 h-5 text-indigo-600 dark:text-indigo-400 mr-2" />
               <span className="text-indigo-700 dark:text-indigo-300 font-medium">Your Digital Memory Vault</span>
             </motion.div>
-            
-            <motion.h1 
+
+            <motion.h1
               variants={fadeIn}
               className="text-6xl lg:text-7xl font-bold leading-tight"
             >
@@ -50,23 +50,26 @@ export default function Hero({ onVideoOpen }) {
                 In Your Own Way
               </span>
             </motion.h1>
-            
-            <motion.p 
+
+            <motion.p
               variants={fadeIn}
               className="text-2xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl"
             >
-              Transform your thoughts, voice, photos, and videos into beautifully organized memories. 
+              Transform your thoughts, voice, photos, and videos into beautifully organized memories.
               Let AI help you preserve and relive your journey.
             </motion.p>
-            
-            <motion.div 
+
+            <motion.div
               variants={fadeIn}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <button className="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-medium hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg shadow-indigo-500/20 text-lg">
+              <a href="/login" className="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-medium hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg shadow-indigo-500/20 text-lg inline-flex items-center">
                 Start Free Trial
-              </button>
-              <button 
+              </a>
+              <a href="/todos" className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-medium hover:from-purple-700 hover:to-pink-700 transition-all shadow-lg shadow-purple-500/20 text-lg inline-flex items-center">
+                Try Todos App
+              </a>
+              <button
                 onClick={onVideoOpen}
                 className="px-8 py-4 border-2 border-indigo-200 dark:border-indigo-800 text-indigo-600 dark:text-indigo-400 rounded-full font-medium hover:bg-indigo-50 dark:hover:bg-indigo-900/30 transition-all text-lg flex items-center space-x-2"
               >
@@ -74,8 +77,8 @@ export default function Hero({ onVideoOpen }) {
                 <span>Watch Demo</span>
               </button>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               variants={fadeIn}
               className="flex items-center space-x-4 text-gray-500 dark:text-gray-400"
             >
@@ -91,8 +94,8 @@ export default function Hero({ onVideoOpen }) {
               </p>
             </motion.div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             variants={fadeIn}
             className="relative"
           >
@@ -113,4 +116,4 @@ export default function Hero({ onVideoOpen }) {
       </div>
     </motion.section>
   );
-} 
+}

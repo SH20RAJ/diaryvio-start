@@ -4,7 +4,7 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "aithumb",
+	"name": "diaryvio",
 	"main": ".open-next/worker.js",
 	"compatibility_date": "2025-03-01",
 	"compatibility_flags": [
@@ -17,7 +17,16 @@
 	},
 	"observability": {
 		"enabled": true
-	}
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "diaryvio",
+			"database_id": "5c4caa09-5095-4f33-a9a1-e5222f7240e4",
+			"preview_database_id": "5c4caa09-5095-4f33-a9a1-e5222f7240e4"
+		}
+	],
+
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement

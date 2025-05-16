@@ -23,15 +23,18 @@ export default function Navbar() {
               <Link href="#testimonials" className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors">Testimonials</Link>
             </nav>
           </div>
-          
+
           <div className="flex items-center space-x-4">
-            <button className="hidden md:block px-6 py-2 text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors">
+            <Link href="/login" className="hidden md:block px-6 py-2 text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors">
               Log in
-            </button>
-            <button className="px-6 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-medium hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg shadow-indigo-500/20">
+            </Link>
+            <Link href="/todos" className="hidden md:block px-6 py-2 text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors">
+              My Todos
+            </Link>
+            <Link href="/login" className="px-6 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-medium hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg shadow-indigo-500/20">
               Get Started
-            </button>
-            <button 
+            </Link>
+            <button
               className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
@@ -63,13 +66,18 @@ export default function Navbar() {
               <Link href="#how-it-works" className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors">How It Works</Link>
               <Link href="#pricing" className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors">Pricing</Link>
               <Link href="#testimonials" className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors">Testimonials</Link>
-              <button className="text-left text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors">
-                Log in
-              </button>
+              <div className="border-t border-gray-200 dark:border-gray-700 pt-4 mt-2">
+                <Link href="/login" className="block text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors mb-4">
+                  Log in
+                </Link>
+                <Link href="/todos" className="block text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors">
+                  My Todos
+                </Link>
+              </div>
             </nav>
           </div>
         </Dialog>
       </div>
     </header>
   );
-} 
+}
